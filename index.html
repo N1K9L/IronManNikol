@@ -1,1 +1,32 @@
-<h1>Nikol Iron Man</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Modelo 3D - Nikol Jaramillo</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000; /* Color de fondo opcional */
+        }
+        model-viewer {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <model-viewer src="IronMan.glb" 
+        alt="Modelo 3D de Iron Man"
+        auto-rotate
+        camera-controls
+        ar>
+    </model-viewer>
+</body>
+</html>
